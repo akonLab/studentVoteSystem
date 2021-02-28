@@ -8,34 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- css -->
-    <link rel="stylesheet" href="style/admin.css">
+    <link rel="stylesheet" href="style/log.css">
     <link rel="stylesheet" href="style/index.css">
-    <!-- js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-<div class="header p-3 d-flex justify-content-around">
-    <a href="./profile.html">profile</a>
-    <a href="./home.html">home</a>
-    <a href="./admin.html">admin</a>
-    <a href="./log.html">log out</a>
-</div>
 
-<h3 class="text-center mt-3">Admin page</h3>
 
-<form id="form" action="">
-    <textarea name="question" placeholder="question" id="" rows="3" value=""></textarea>
-    <input type="text" placeholder="answer 1" name="ans1" value="">
-    <input type="text" placeholder="answer 2" name="ans2" value="">
-    <div hidden>
-        <input type="text" name="id" value="">
-    </div>
+<form action="">
+    <h3 class="text-center">Log In</h3>
+    <input type="email" name="email" placeholder="email">
+    <input type="password" name="password" placeholder="password">
     <input type="submit">
 </form>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
