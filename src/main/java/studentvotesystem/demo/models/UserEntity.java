@@ -14,25 +14,27 @@ public class UserEntity {
     private Integer age;
     private String interest;
     private String role;
+    private String authorities;
 
     public UserEntity() {
     }
+    public UserEntity(  String fullName, String group, Integer age, String interest, String role, String authorities) {
 
-    public UserEntity(String fullName, String group, Integer age, String interest, String role) {
-        setFullName(fullName);
-        setGroup(group);
-        setAge(age);
-        setInterest(interest);
-        setRole(role);
+        this.fullName = fullName;
+        this.group = group;
+        this.age = age;
+        this.interest = interest;
+        this.role = role;
+        this.authorities = authorities;
     }
-
-    public UserEntity(Integer id, String fullName, String group, Integer age, String interest, String role) {
-        setId(id);
-        setFullName(fullName);
-        setGroup(group);
-        setAge(age);
-        setInterest(interest);
-        setRole(role);
+    public UserEntity(Integer id, String fullName, String group, Integer age, String interest, String role, String authorities) {
+        this.id = id;
+        this.fullName = fullName;
+        this.group = group;
+        this.age = age;
+        this.interest = interest;
+        this.role = role;
+        this.authorities = authorities;
     }
 
     //getter
@@ -60,6 +62,10 @@ public class UserEntity {
         return role;
     }
 
+    public String getAuthorities() {
+        return authorities;
+    }
+
     //setter
     public void setId(Integer id) {
         this.id = id;
@@ -85,5 +91,7 @@ public class UserEntity {
         this.role = role;
     }
 
-
+    public void setAuthorities(String authorities) {
+        this.authorities = authorities;
+    }
 }
