@@ -15,10 +15,10 @@ public class UserEntity {
     private String interest;
     private String role;
 
-    UserEntity() {
+    public UserEntity() {
     }
 
-    UserEntity(String fullName, String group, Integer age, String interest, String role) {
+    public UserEntity(String fullName, String group, Integer age, String interest, String role) {
         setFullName(fullName);
         setGroup(group);
         setAge(age);
@@ -26,7 +26,7 @@ public class UserEntity {
         setRole(role);
     }
 
-    UserEntity(Integer id, String fullName, String group, Integer age, String interest, String role) {
+    public UserEntity(Integer id, String fullName, String group, Integer age, String interest, String role) {
         setId(id);
         setFullName(fullName);
         setGroup(group);
