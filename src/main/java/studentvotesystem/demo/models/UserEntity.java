@@ -3,7 +3,7 @@ package studentvotesystem.demo.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +18,8 @@ public class UserEntity {
 
     public UserEntity() {
     }
-    public UserEntity(  String fullName, String group, Integer age, String interest, String role, String authorities) {
+
+    public UserEntity(String fullName, String group, Integer age, String interest, String role, String authorities) {
 
         this.fullName = fullName;
         this.group = group;
@@ -27,6 +28,7 @@ public class UserEntity {
         this.role = role;
         this.authorities = authorities;
     }
+
     public UserEntity(Integer id, String fullName, String group, Integer age, String interest, String role, String authorities) {
         this.id = id;
         this.fullName = fullName;
