@@ -14,32 +14,47 @@ public class UserEntity {
     private String user_group;
     private Integer user_age;
     private String user_interest;
+
+    private String email;
+    private String password;
+
     private String role;
     private String authorities;
 
     public UserEntity() {
     }
 
-    public UserEntity(String user_name, String user_group, Integer user_age, String user_interest, String role, String authorities) {
+    public UserEntity(  String user_name, String user_group, Integer user_age, String user_interest, String email, String password, String role, String authorities) {
         this.user_name = user_name;
         this.user_group = user_group;
         this.user_age = user_age;
         this.user_interest = user_interest;
+        this.email = email;
+        this.password = password;
         this.role = role;
         this.authorities = authorities;
     }
-
-    public UserEntity(Integer user_id, String user_name, String user_group, Integer user_age, String user_interest, String role, String authorities) {
+    public UserEntity(Integer user_id, String user_name, String user_group, Integer user_age, String user_interest, String email, String password, String role, String authorities) {
         this.user_id = user_id;
         this.user_name = user_name;
         this.user_group = user_group;
         this.user_age = user_age;
         this.user_interest = user_interest;
+        this.email = email;
+        this.password = password;
         this.role = role;
         this.authorities = authorities;
     }
 
     //setter
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public void setUser_id(Integer user_id) {
         this.user_id = user_id;
@@ -70,6 +85,14 @@ public class UserEntity {
     }
 
     //getter
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
 
     public Integer getUser_id() {
         return user_id;
