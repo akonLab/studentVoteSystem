@@ -1,3 +1,4 @@
+
 package studentvotesystem.demo.models;
 
 import javax.persistence.*;
@@ -7,86 +8,57 @@ import javax.persistence.*;
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer user_id;
 
-    private String fullName;
-    private String group;
-    private Integer age;
-    private String interest;
+    private String user_name;
+    private String user_group;
+    private Integer user_age;
+    private String user_interest;
     private String role;
     private String authorities;
 
     public UserEntity() {
     }
 
-    public UserEntity(String fullName, String group, Integer age, String interest, String role, String authorities) {
-
-        this.fullName = fullName;
-        this.group = group;
-        this.age = age;
-        this.interest = interest;
+    public UserEntity(String user_name, String user_group, Integer user_age, String user_interest, String role, String authorities) {
+        this.user_name = user_name;
+        this.user_group = user_group;
+        this.user_age = user_age;
+        this.user_interest = user_interest;
         this.role = role;
         this.authorities = authorities;
     }
 
-    public UserEntity(Integer id, String fullName, String group, Integer age, String interest, String role, String authorities) {
-        this.id = id;
-        this.fullName = fullName;
-        this.group = group;
-        this.age = age;
-        this.interest = interest;
+    public UserEntity(Integer user_id, String user_name, String user_group, Integer user_age, String user_interest, String role, String authorities) {
+        this.user_id = user_id;
+        this.user_name = user_name;
+        this.user_group = user_group;
+        this.user_age = user_age;
+        this.user_interest = user_interest;
         this.role = role;
         this.authorities = authorities;
-    }
-
-    //getter
-    public Integer getId() {
-        return id;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public String getGroup() {
-        return group;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public String getInterest() {
-        return interest;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public String getAuthorities() {
-        return authorities;
     }
 
     //setter
-    public void setId(Integer id) {
-        this.id = id;
+
+    public void setUser_id(Integer user_id) {
+        this.user_id = user_id;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
     }
 
-    public void setGroup(String group) {
-        this.group = group;
+    public void setUser_group(String user_group) {
+        this.user_group = user_group;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setUser_age(Integer user_age) {
+        this.user_age = user_age;
     }
 
-    public void setInterest(String interest) {
-        this.interest = interest;
+    public void setUser_interest(String user_interest) {
+        this.user_interest = user_interest;
     }
 
     public void setRole(String role) {
@@ -95,5 +67,35 @@ public class UserEntity {
 
     public void setAuthorities(String authorities) {
         this.authorities = authorities;
+    }
+
+    //getter
+
+    public Integer getUser_id() {
+        return user_id;
+    }
+
+    public String getUser_name() {
+        return user_name;
+    }
+
+    public String getUser_group() {
+        return user_group;
+    }
+
+    public Integer getUser_age() {
+        return user_age;
+    }
+
+    public String getUser_interest() {
+        return user_interest;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public String getAuthorities() {
+        return authorities;
     }
 }
